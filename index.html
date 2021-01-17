@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio carrito</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/carrito.css">
+
+</head>
+<body class="bg-light">
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <a href="#" class="navbar-brand">
+        <h3 class="px-5">
+          <i class="fas fa-shopping-basket"> Ejercicio carrito Js</i>
+  
+        </h3>
+      </a>
+      <button class="navbar-toggler"
+      type="button"
+          data-toggle="collapse"
+          data-target = "#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+  >
+      <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+      <div class="navbar-collapse collapse justify-content-between" id="navbarNavAltMarkup">
+        <div class="mr-auto"></div> 
+        <div class="navbar-nav ">
+          <a href="#" class="nav-item nav-link active">
+            <h5 class="px-5 cart float-right">
+                <i class="fas fa-shopping-cart">Carrito</i>
+                <span id="cart_count" class="text-warning bg-light">0</span>
+
+            </h5>
+          </a>
+        </div>
+      
+      </div>
+      
+  
+     
+
+    </nav>
+
+
+  </header>
+    <div id="lista-productos" class="container" >
+        <!-- <div class="card productos" >
+            <img class="card-img-top img-responsive" src="fotos/i7.jpg" alt="imagen producto">
+            <div class="card-body">
+              <h4 class="card-title text-info">MICROPROCESADOR INTEL CORE I7 9700 COFFEELAKE 8/8 4.7GHZ 12MB 1151</h4>
+              <h4>$33999</h4>
+              <input type="text" class="form-control" value="1" name="cantidad">
+              <a href="#" class="btn btn-primary mt-2">Agregar al carrito</a>
+            </div>
+          </div> -->
+          <div class="row text-center py-5 ">
+            <div class="col-sm-6 col-md-3 my-3-md-0">
+              <div class="card productos">
+                <img class="card-img-top img-responsive" src="fotos/i7.jpg" alt="imagen producto">
+                <div class="card-body">
+                <h4 class="card-title text-info" >MICROPROCESADOR INTEL CORE I7 9700 </h4>
+                <h6><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i> 
+                </h6>
+                <p class="card-text">texto ejemplo producto producto</p>
+                <small><s class="text-secondary">$34999</s></small>
+                <h5 class="precio"><span >$33999</span></h5>
+                <a href="#" class="btn btn-warning my-3 agregarCarrito"  data-id="1">Agregar al carrito <i class="fas fa-shopping-cart"></i> </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 my-3 my-md-0">
+               
+              <div class="card productos">
+                <img class="card-img-top img-responsive" src="fotos/mother.jpeg" alt="imagen producto">
+                <div class="card-body">
+                    <h4 class="card-title text-info">Gigabyte GA-H470 PRO AX</h4>
+                    <h6><i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i> 
+                    </h6>
+                    <p class="card-text">texto ejemplo producto producto</p>
+                    <small><s class="text-secondary">$24500</s></small>
+                    <h5 class="precio"><span >$22.789</span></h5>
+                
+              <a href="#" class="btn btn-warning my-3 agregarCarrito" data-id="2">Agregar al carrito <i class="fas fa-shopping-cart"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 my-3 my-md-0">
+                <div class="card productos">
+                    <img class="card-img-top img-responsive" src="fotos/placavideo.jpeg" alt="imagen producto">
+                  <div class="card-body">
+                    <h4 class="card-title text-info">
+                      Radeon RX 5600 XT 6Gb Msi Gaming Mx</h4>
+                    <h6><i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </h6>
+                    <p class="card-text">texto ejemplo producto producto</p>
+                    <small><s class="text-secondary">$95000</s></small>
+                    <h5 class="precio"><span >$94.799</span></h5>
+      
+                    <a href="#" class="btn btn-warning my-3 agregarCarrito" data-id="3">Agregar al carrito <i class="fas fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-md-3 my-3 my-md-0">
+                <div class="card productos">
+                  <img class="card-img-top img-responsive" src="fotos/fuente.jpg" alt="imagen producto">
+                  <div class="card-body">
+                  <h4 class="card-title text-info">
+                    Fuente Thermaltake Smart 600 W 80 Plus </h4>
+               
+                  <h6><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </h6>
+                  <p class="card-text">texto ejemplo producto producto</p>
+                  <small><s class="text-secondary">$8500</s></small>
+                  <h5 class="precio"><span >$8.389</span></h5>
+    
+                  <a href="#" class="btn btn-warning my-3 agregarCarrito" data-id="4">Agregar al carrito <i class="fas fa-shopping-cart"></i></a>
+                  </div>
+                </div>
+              </div>
+           
+                
+          </div>
+
+          <div class="table-responsive table-striped" id="carrito">
+            <table class="table" id="lista-carrito">
+              <thead>
+              <tr>
+                <th colspan="5"><h3>Detalle de productos</h3></th>
+
+              </tr>
+              <tr>
+                  <th width="20%">Imagen</th>
+                  <th width="20%">Nombre</th>
+                  <th width="20%">Precio</th>
+                  <th width="20%">Cantidad</th>
+             
+                  <th width="5%">Accion</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+
+              
+            </tbody>
+              <!-- <tr>
+                <td> producto</td>
+                <td> 2 </td>
+                <td> precio </td>
+                <td> 2500 </td>
+                <td> 
+                    <button class="btn-danger">
+                      Borrar</button>
+
+                </td>
+              </tr>
+
+              <tr>
+
+                  <td colspan="3" align="right">Total</td>
+                  <td align="right">6000</td>
+                 <td></td>
+
+              </tr> -->
+           
+             
+            </table>
+
+            <a href="#" id="vaciar-carrito" class="boton">Vaciar carrito</a>
+
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+        
+       
+
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>

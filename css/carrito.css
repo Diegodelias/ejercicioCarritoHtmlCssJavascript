@@ -1,0 +1,27 @@
+
+.fa-star,
+.fa-star-half{
+    color:yellowgreen;
+    padding: 3% 0;
+}
+
+#cart_count{
+    text-align:center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius:3rem;
+}
+.boton {
+    background:#6394f8;
+    color:white;
+    text-align:center;
+    padding: 12px;
+    text-decoration:none;
+    display:block;
+    border-radius:3px;
+    font-size: 16px;
+    margin: 25px 0 15px 0;
+}
+.boton:hover{
+    color:white; 
+
+}
