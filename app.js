@@ -16,6 +16,16 @@ function registrarEventos(){
         limpiarHTML();
 
     })
+
+
+//muestra cursos local storage
+document.addEventListener('DOMContentLoaded', () =>{
+    articulosCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+    carritoHTML()
+})
+
+
 }
 
 function agregarProducto(e) {
@@ -146,6 +156,14 @@ function carritoHTML(){
         contenedorCarrito.appendChild(row);
     })
 
+    //sincronizar con storage
+    sincronizarStorage()
+    
+}
+
+
+function sincronizarStorage(){
+    localStorage.setItem('carrito', JSON.stringify(articulosCarrito))
 }
 
 //eliminar los cursos del tbody
